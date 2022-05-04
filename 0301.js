@@ -4,7 +4,7 @@ scene.background = new THREE.Color(0xffffff);
 
 //Render
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth / 2, window.innerHeight);
+renderer.setSize(window.innerWidth, window.innerHeight);
 // renderer.setClearColor("#3EC9CD");
 document.getElementById("3js").appendChild(renderer.domElement);
 // document.body.appendChild(renderer.domElement);
@@ -12,7 +12,7 @@ document.getElementById("3js").appendChild(renderer.domElement);
 //camera
 const camera = new THREE.PerspectiveCamera(
   75,
-  window.innerWidth / window.innerHeight / 2,
+  window.innerWidth / window.innerHeight,
   0.1,
   1000
 );
